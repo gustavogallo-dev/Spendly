@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autenticação</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../styles/auth.css" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  </head>
+  <body>
+    <!--Login and Register an account-->
+    <main class="auth">
+      <div class="auth__card">
+        <h1 class="auth__logo">Spendly</h1>
+        <div class="auth__toggle">
+          <button id="btn-login" class="toggle active">Entrar</button>
+          <button id="btn-register" class="toggle">Registrar</button>
+        </div>
+        <h2 id="form-title">Entrar na sua conta</h2>
+        <form id="auth-form">
+          <div class="form-group" id="group-name" style="display: none">
+            <label for="name">Nome</label>
+            <input type="text" id="name" placeholder="Seu nome" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Seu email" required />
+          </div>
+          <div class="form-group password-group">
+            <label for="password">Senha</label>
+            <div class="password-wrapper">
+              <input type="password" id="password" placeholder="Sua senha" />
+              <button
+                type="button"
+                id="toggle-password"
+                class="password-toggle"
+              >
+                <i data-lucide="eye"></i>
+              </button>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-primary" id="form-submit">
+            Entrar
+          </button>
+        </form>
+        <!-- Helper text -->
+        <p class="auth__help">Esqueceu a senha? <a href="#">Recuperar</a></p>
+      </div>
+    </main>
+    <script src="../scripts/auth.js"></script>
+  </body>
+  <script>
+    lucide.createIcons(); 
+  </script>
+</html>

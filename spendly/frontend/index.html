@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conheça a Spendly</title>
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!--Menu fixed on top-->
+    <header class="navbar">
+      <div class="navbar__container">
+        <!--Spendly Name-->
+        <div class="navbar__logo">
+          <a href="/" class="logo__text">Spendly</a>
+        </div>
+
+        <!--Login and Signup buttons-->
+        <div class="navbar__actions">
+          <a href="pages/auth.html" class="btn btn-primary">Entrar</a>
+          <a href="pages/auth.html" class="btn btn-secondary">Crie sua conta</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!--Hero Content-->
+      <section class="hero">
+        <div class="hero__container">
+          <h1 class="hero__title">Seu dinheiro, nossa prioridade</h1>
+          <p class="hero__subtitle">
+            Controle total das suas finanças, sem complicação.
+          </p>
+
+          <div class="hero__actions">
+            <a href="pages/auth.html" class="btn btn-primary">Cadastre-se já</a>
+          </div>
+        </div>
+      </section>
+
+      <!--Why use Spendly?-->
+      <section class="why-use">
+        <div class="why-use__container">
+          <h2 class="why-use__title">Por que usar?</h2>
+
+          <div class="why-use__grid">
+            <div class="why-card">
+              <div class="why-icon"><i data-lucide="bar-chart-3"></i></div>
+              <div class="why-title">Visual pensado para decisões rápidas</div>
+              <div class="why-desc">Veja seu dinheiro com clareza</div>
+            </div>
+            <div class="why-card">
+              <div class="why-icon"><i data-lucide="zap"></i></div>
+              <div class="why-title">Rápido e Direto</div>
+              <div class="why-desc">Sem telas inúteis</div>
+            </div>
+            <div class="why-card">
+              <div class="why-icon"><i data-lucide="lock"></i></div>
+              <div class="why-title">Seguro</div>
+              <div class="why-desc">Seus dados protegidos</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--How it works?-->
+      <section class="how-it-works">
+        <div class="how-it-works__container">
+          <h2 class="how-it-works__title">Como funciona</h2>
+          <div class="how-it-works__steps">
+            <div class="step-card">
+              <div class="step-icon">
+                <i data-lucide="user-plus"></i>
+              </div>
+              <h3 class="step-number">1</h3>
+              <p class="step-desc">Crie sua conta</p>
+            </div>
+            <div class="step-card">
+              <div class="step-icon">
+                <i data-lucide="edit-3"></i>
+              </div>
+              <h3 class="step-number">2</h3>
+              <p class="step-desc">Registre seus ganhos e gastos</p>
+            </div>
+            <div class="step-card">
+              <div class="step-icon">
+                <i data-lucide="activity"></i>
+              </div>
+              <h3 class="step-number">3</h3>
+              <p class="step-desc">Acompanhe seu saldo em tempo real</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Preview section-->
+      <section class="preview">
+        <div class="preview__container">
+          <h2 class="preview__title">Um dashboard feito para ser direto</h2>
+
+          <div class="preview__mock">
+            <div class="transaction income">
+              <span class="transaction__label">Salário</span>
+              <span class="transaction__value">+ R$ 8.200,00</span>
+            </div>
+            <div class="transaction expense">
+              <span class="transaction__label">Aluguel</span>
+              <span class="transaction__value">- R$ 2.500,00</span>
+            </div>
+            <div class="transaction expense">
+              <span class="transaction__label">Supermercado</span>
+              <span class="transaction__value">- R$ 620,50</span>
+            </div>
+            <div class="transaction income">
+              <span class="transaction__label">Freelance</span>
+              <span class="transaction__value">+ R$ 1.200,00</span>
+            </div>
+          </div>
+
+          <!--Preview CTA-->
+          <div class="preview__cta">
+            <a href="pages/auth.html" class="btn btn-cta-small"
+              >Quero ver meu saldo agora</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!--Final CTA-->
+      <section class="cta-final">
+        <div class="cta__container">
+          <h2 class="cta__title">Comece a controlar seu dinheiro hoje</h2>
+          <a href="pages/auth.html" class="btn btn-cta">Entrar no Spendly</a>
+        </div>
+      </section>
+
+      <!--Footer-->
+      <footer class="footer">
+        <div class="footer__container">
+          <p class="footer__name">Spendly</p>
+          <p class="footer__desc">
+            Projeto focado em performance e clareza financeira
+          </p>
+          <p class="footer__github">
+            <a href="https://github.com/gustavogallo-dev/" target="_blank">
+              <i data-lucide="github"></i> Github
+            </a>
+          </p>
+        </div>
+      </footer>
+    </main>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
